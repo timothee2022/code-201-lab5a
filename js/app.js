@@ -10,7 +10,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
   let mySum = a + b;
-  let myStr = `The sum of ${a} and ${b} is ${mySum}.`
+  let myStr = `The sum of ${a} and ${b} is ${mySum}.`;
 
   return [mySum, myStr];
 }
@@ -31,7 +31,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
   let myproduct = a * b;
-  let myStr = `The product of ${a} and ${b} is ${myproduct}.`
+  let myStr = `The product of ${a} and ${b} is ${myproduct}.`;
 
   return [myproduct, myStr];
 }
@@ -61,7 +61,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
   let thirdElement = `${a} and ${b} and ${c} sum to ${totalSum}.`;
   let fourthElement = `The product of ${a} and ${b} and ${c} is ${totalMultiply}.`;
-
+  
   return [totalSum, totalMultiply, thirdElement, fourthElement];
 }
 
@@ -86,7 +86,7 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
   let totalSum = sumAndMultiply(sumArr[0], sumArr[1], sumArr[2])[0];
   let totalStr = `${sumArr} was passed in as an array of numbers, and ${totalSum} is their sum.`;
- 
+
   return [totalSum, totalStr];
 }
 
@@ -108,11 +108,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let totalMultiply = sumAndMultiply(multArr[0], multArr[1], multArr[2])[1];
+  let totalStr = `The numbers ${multArr} have a product of ${totalMultiply}.`;
+  
+  return [totalMultiply, totalStr];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
